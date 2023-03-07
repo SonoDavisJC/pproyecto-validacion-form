@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación con JS</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!--<link rel="stylesheet" href="https://kit.fontawesome.com/889cbcbdf4.css" crossorigin="anonymous">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__title">Formulario Validación</h1>
+    </header>
+
+    <main class="main">
+
+        <section class="section section__form">
+            <form class="form-validation" action="" method="">
+
+                <div class="input-group">
+                    <label class="input-group__label" for="MyName">Nombre</label>
+                    <i></i>
+                    <input type="text" id="MyName" name="name" class="input-group__input input-group__input--error" placeholder="Ej. Juan Martin" required>
+                    <span class="input-group__help input-group__help--error"></span>
+                </div>
+        
+                <div class="input-group">
+                    <label class="input-group__label" for="MySurnames">Apellidos</label>
+                    <i></i>
+                    <input type="text" id="MySurnames" name="last_name"class="input-group__input input-group__input--error" placeholder="Ej. Caceres Domingo" required>
+                    <span class="input-group__help input-group__help--error"></span>
+                </div>
+        
+                <div class="input-group">
+                    <label class="input-group__label" for="MyEmail">Email</label>
+                    <i></i>
+                    <input type="email" id="MyEmail" name="email_id" class="input-group__input input-group__input--error" placeholder="Ej. Jmartin@gmail.com" required>
+                    <span class="input-group__help input-group__help--error"></span>
+                </div>
+        
+                <div class="input-group">
+                    <label class="input-group__label" for="MyTelefono">Telefono</label>
+                    <i></i>
+                    <input type="text" id="MyTelefono" name="telefono" class="input-group__input input-group__input--error" placeholder="Ej. 994 843 859">
+                    <span class="input-group__help input-group__help--error"></span>
+                </div>
+        
+                <div class="input-group">
+                    <label class="input-group__label" for="MyDescription">Mensaje <span class="input-group__opcional"> *Opcional</span></label>
+                    <input type="text" id="MyDescription" name="message" class="input-group__input input-group__input--error" placeholder="Ej. Hola como estas">
+                    <span class="input-group__help input-group__help--error"></span>
+                </div>
+                
+                <input type="submit" class="input__submit" value="Enviar">
+               
+            </form>
+        </section>
+
+        <section class="section section__information">  
+            <figure class="figure">
+                <img src="./assets/emaiL.svg" alt="Icon Email" class="imgEmaiL" >
+            </figure>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    </footer>
+    
+    
+    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/889cbcbdf4.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('VuJvJ5cPNfoAL-MOT') </script>
+    
+</body>
+</html>
